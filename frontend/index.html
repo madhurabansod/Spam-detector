@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Shield - AI Spam Detector</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <header>
+        <div class="logo">
+            <!-- Save your image as logo.png in the same folder -->
+            <img src="logo.png" alt="Spam Shield Logo" class="header-logo">
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>AI Powered <br><span class="gradient-text">Spam Detector</span></h2>
+                <p>Detect spam messages instantly using advanced machine learning technology trained to keep your inbox safe.</p>
+            </div>
+            <div class="hero-image">
+                <!-- Using the full logo image here as well -->
+                <img src="logo11.png" alt="Spam Shield Robot" class="main-robot">
+            </div>
+        </section>
+
+        <section class="app-card">
+            <div class="input-header">
+                <span class="icon">💬</span> Enter your message below
+            </div>
+            <textarea id="messageInput" placeholder="Type or paste the message here..."></textarea>
+            
+            <div class="controls">
+                <div class="examples">
+                    <span>Try these:</span>
+                    <button class="example-btn" onclick="fillExample('Claim your $1000 gift card now!')">Claim Prize</button>
+                    <button class="example-btn" onclick="fillExample('Hey, are you free for a call at 5pm?')">Normal Text</button>
+                </div>
+                <button id="detectBtn" class="primary-btn">
+                    🚀 Detect Spam
+                </button>
+            </div>
+        </section>
+
+        <section class="result-card">
+            <div class="input-header">
+                <span class="icon">📋</span> Analysis Result
+            </div>
+            <div id="resultContent" class="result-placeholder">
+            
+                <p>Enter a message above to begin AI analysis.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
